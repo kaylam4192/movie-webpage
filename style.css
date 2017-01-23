@@ -4,16 +4,20 @@ html {
     background-size: cover;
     /*leaves no white space*/
 }
+
 h1 {
+    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 50px;
     text-align: center;
     text-shadow: 5px 5px 5px black;
     /*the first two values give the horizontal and vertical position: of the shadow while the third value give the blur on the shadow*/
-    background:linear-gradient(black,lightgray);
+    background: linear-gradient(black, lightgray);
     /*color goes from black to lightgray*/
 }
+
 p {
+    font-family: 'Fira Sans Condensed', sans-serif;
     margin: auto;
     /*centers the paragragh*/
     position: relative;
@@ -25,7 +29,7 @@ p {
     height: 150px;
     width: 500px;
     font-size: 25px;
-    background: radial-gradient(gray,black);
+    background: radial-gradient(gray, black);
     /*makes a circular radiant going from a gray inside to a black outside*/
     color: white;
     padding: 20px;
@@ -39,13 +43,13 @@ p {
 }
 
 @keyframes appear {
-    from{
+    from {
         opacity: 0;
         /*makes it invisible*/
         transform: scale(0);
         /*makes the box extremely small*/
     }
-    to{
+    to {
         opacity: 1;
         /*makes the paragragh visible*/
         transform: scale(1);
@@ -73,4 +77,33 @@ p {
 
 blue {
     color: blue;
+}
+
+.blue-button {
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 20px;
+    height: 50px
+}
+
+.blue-button:hover {
+    background: #3cb0fd;
+}
+
+form {
+    position: relative;
+    top: -25px;
+    left: 550px;
+}
+
+group {
+    text-align: center;
+    position: relative;
+    top: 140px;
+    left: 550px;
 }
